@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>f43f494c-f4cf-4d0f-bee1-d0bd1419d497</ProjectGuid>
+    <ProjectGuid>85dca8b4-cf42-4aa6-9c13-b57763538e2d</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>DDD</RootNamespace>
