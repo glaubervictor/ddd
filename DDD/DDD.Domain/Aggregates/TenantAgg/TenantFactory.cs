@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DDD.Domain.Aggregates.TenantAgg
+﻿namespace DDD.Domain.Aggregates.TenantAgg
 {
-    public class TenantFactory
+    public static class TenantFactory
     {
+        public static Tenant Create(string descricao)
+        {
+            var tenant = new Tenant();
+            tenant.Descricao = descricao;
+
+            return tenant;
+        }
     }
 }

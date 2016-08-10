@@ -24,10 +24,7 @@ namespace DDD.Application.Service
 
         public void Add(TenantDTO tenantDTO)
         {
-            var tenant = new Tenant
-            {
-                Descricao = tenantDTO.Descricao
-            };
+            var tenant = TenantFactory.Create(tenantDTO.Descricao);
 
             ValideTenant(tenant);
             
