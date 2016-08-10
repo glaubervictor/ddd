@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDD.DTO
+namespace DDD.Domain.Aggregates.UsuarioAgg
 {
-    public class Class1
+    public class UsuarioSpecs
     {
     }
 }

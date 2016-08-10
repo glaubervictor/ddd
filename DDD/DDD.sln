@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Application", "DDD.Appl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.DTO", "DDD.DTO\DDD.DTO.csproj", "{E3FE054F-7172-4914-8042-400786FDDFAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Web", "DDD.Web\DDD.Web.csproj", "{33A9941C-510D-466A-A096-6CD42FAB31A9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDD.Web", "DDD.Web\DDD.Web.csproj", "{5F3ECD14-93C4-4CD5-92D0-CF4EDA0CB372}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,10 +35,10 @@ Global
 		{E3FE054F-7172-4914-8042-400786FDDFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3FE054F-7172-4914-8042-400786FDDFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3FE054F-7172-4914-8042-400786FDDFAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{33A9941C-510D-466A-A096-6CD42FAB31A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{33A9941C-510D-466A-A096-6CD42FAB31A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{33A9941C-510D-466A-A096-6CD42FAB31A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{33A9941C-510D-466A-A096-6CD42FAB31A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F3ECD14-93C4-4CD5-92D0-CF4EDA0CB372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F3ECD14-93C4-4CD5-92D0-CF4EDA0CB372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F3ECD14-93C4-4CD5-92D0-CF4EDA0CB372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F3ECD14-93C4-4CD5-92D0-CF4EDA0CB372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

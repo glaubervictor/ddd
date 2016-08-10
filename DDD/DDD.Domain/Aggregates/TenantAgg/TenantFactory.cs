@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDD.Domain
+namespace DDD.Domain.Aggregates.TenantAgg
 {
-    public class Class1
+    public class TenantFactory
     {
     }
 }
