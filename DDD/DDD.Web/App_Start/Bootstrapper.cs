@@ -30,7 +30,7 @@ namespace DDD.Web
             builder.RegisterControllers(Assembly.GetExecutingAssembly());
 
             //Register Session
-            builder.RegisterType<SessionHandler>().As<ISessionHandler>().InstancePerLifetimeScope();
+            builder.RegisterType<SessionHandler>().As<ISessionHandler>().InstancePerRequest();
 
             //Register MainBcUnitOfWork
             builder.RegisterType<MainBcUnitOfWork>().InstancePerLifetimeScope();

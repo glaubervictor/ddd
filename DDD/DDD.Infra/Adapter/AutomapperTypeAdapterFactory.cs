@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
-using AutoMapper.Configuration.Conventions;
 using AutoMapper.Mappers;
+using DDD.Domain.Aggregates.TenantAgg;
+using DDD.Domain.Base;
+using DDD.DTO;
+using System.Linq;
 
 namespace DDD.Infra.Adapter
 {
@@ -13,19 +16,19 @@ namespace DDD.Infra.Adapter
         /// </summary>
         public AutomapperTypeAdapterFactory()
         {
-            Mapper.Initialize(cfg => 
+            var entityAssembly  = typeof(Tenant).Assembly;
+            var modelAssembly   = typeof(TenantDTO).Assembly;
+            var modelNamespace  = modelAssembly.GetTypes().FirstOrDefault().Namespace;
+
+            foreach (var entity in entityAssembly.GetTypes().Where(a => a.BaseType == typeof(Entity)))
             {
-                cfg.CreateMissingTypeMaps = true;
-                
-                //Conventions
-                cfg.AddMemberConfiguration().AddMember<NameSplitMember>().AddName<PrePostfixName>(_ => _.AddStrings(p => p.Postfixes, "DTO"));
-                cfg.AddConditionalObjectMapper().Where((s, d) => s.Name == d.Name + "DTO");
+                var model = modelAssembly.GetType($"{modelNamespace}.{entity.Name}DTO");
 
-                //Manually Maps
-                //cfg.CreateMap<TenantDTO, Tenant>();
-            });
-
-            Mapper.AssertConfigurationIsValid();
+                if (model != null)
+                {
+                    Mapper.CreateMap(entity, model);
+                }
+            }
         }
 
         #endregion
